@@ -1,4 +1,4 @@
-tsl-html-css.github.io
+Starter League Winter HTML & CSS class
 ======================
 
-HTML &amp; CSS class page.
+This is the repo for our Jekyll-powered class page.
