@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <title>Site Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,900italic,400,900' rel='stylesheet' type='text/css'>
+    <style>
+
+        /*  This is a comment. In CSS, anything between a slash+star is ignored.    */
+        /*  You can split up comments between multiple lines.
+            This is still a comment, because we haven't closed the comment with a star+slash.
+            End of comment */
+
+
+        /* Ignore this stuff until I tell you to stop ignoring it. */
+
+        html, body {
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+          line-height: 1;
+        }
+
+        * {
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+        }
+
+        html {
+          height: 100%;
+        }
+
+        body {
+          height: 100%;
+
+          /*  This is a font stack. We'll talk about this later.
+              Try removing "Alegreya" and reload the page. What happens? */
+
+          font-family: "Alegreya", Helvetica;
+          font-size: 20px;
+          line-height: 1.3;
+        }
+
+        section {
+          background-size: contain;
+          background-attachment: fixed;
+          min-height: 100%;
+          position: relative;
+        }
+
+        .text {
+          width: 30%;
+          min-width: 300px;
+          padding: 20px 32px;
+          border-radius: 8px;
+          color: white;
+          position: absolute;
+          -moz-box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
+          -webkit-box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 120px rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        h2 {
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: .8em;
+        }
+
+        .one {
+          /*  Nice, you found it! Alright genius. It's time to find an image of your character on the internet.
+              You're not done yet, though. You need to pull the image into the img folder in your repo.
+              Find an image, and just drag it into the img folder. Then, make sure the name of the image
+              matches where it currently says "cape.jpg" */
+          background-image: url(img/cape.jpg);
+        }
+
+        .one .text {
+          background-color: rgba(20, 31, 36, 0.8);
+          bottom: 100px;
+          right: 100px;
+        }
+
+        .two {
+          /*  If you did the last one correctly, you should know what to do with this one. */
+          background-image: url(img/crime.jpg);
+        }
+
+        .two .text {
+          background-color: rgba(129, 143, 153, 0.8);
+          color: #00070F;
+          top: 100px;
+          left: 100px;
+        }
+
+        .three {
+          /*  Easy, right? You're practically a pro. */
+          background-image: url(img/west.jpg);
+        }
+
+        .three .text {
+          background-color: rgba(254, 222, 59, 0.8);
+          color: #141213;
+          bottom: 100px;
+          left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<!--  In HTML, comments look like this. -->
+<!--  They can also span lines
+      Here's the next line. -->
+
+<!-- "section" is a built in HTML tag. It tells the page to treat this next block of content as a discrete section of content.
+      class="one" only exists so that we can access this specific section with CSS.
+      Find ".one" above to style this specific area. -->
+<section class="one">
+    <div class="text">
+        <!-- OK, time to go nuts. h2 stands for Header 2. It's the second biggest headline on a page. -->
+        <!-- Change the words inside <h2></h2> to change the words in the headline. -->
+
+        <h2>My name is Batman.</h2>
+
+        <!-- p stands for paragraph. Change the words inside to change the words inside the paragraph. -->
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+<!-- Here's the next section. Find ".two" in the CSS above to change the styles in this specific section. -->
+<section class="two">
+    <div class="text">
+        <!-- You probably guessed what this does. Change the h2 and p content to update the content -->
+        <h2>I like to fight crime.</h2>
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+<section class="three">
+    <div class="text">
+        <!-- Last one. Change the content here to change the content in the third section. -->
+        <h2>Don't talk to me about this guy.</h2>
+        <p>Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. Na na na na na. </p>
+    </div>
+</section>
+
+</body>
+</html>
+
