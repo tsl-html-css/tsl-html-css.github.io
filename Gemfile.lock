@@ -71,3 +71,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-redirect-from
+  kramdown
